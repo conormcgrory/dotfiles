@@ -1,0 +1,65 @@
+# ~/.muttrc
+
+set imap_user = 'cpmcgrory@gmail.com'
+# set imap_pass = "pass"
+set spoolfile = imaps://imap.gmail.com:993/INBOX
+set folder = imaps://imap.gmail.com:993
+set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
+set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = ~/.mutt/certificates
+
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set smtp_url = "smtp://cpmcgrory@smtp.gmail.com:587/"
+# set smtp_pass = "pass"
+set from = "cpmcgrory@gmail.com"
+set realname = "Conor McGrory"
+
+# authenticators
+set smtp_authenticators = 'gssapi:login'
+
+set sort=threads
+
+# HTML emails
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+set mailcap_path = ~/.mutt/mailcap
+
+set mail_check = 300
+
+set editor = "vim"
+
+# color settings
+source ~/.mutt/colors
+
+# extra client settings
+set query_command = "lbdbq %s"
+set copy
+set beep_new
+set ascii_chars = yes
+set reverse_name
+set move = no
+unset mark_old
+set forward_quote
+set include
+set fast_reply = "yes"
+set indent_str = "> "
+
+# cache email headers to make startup faster
+set header_cache = "~/.mutt/cache/headers/"
+
+# pager settings
+set pager_index_lines = 10
+
+# message scrolling in pager
+bind pager k previous-line
+bind pager j next-line
+bind pager <up> previous-line
+bind pager <down> next-line
+
+# message sorting in index
+set sort = threads
+set sort_browser = date
+set sort_aux = reverse-last-date-received
