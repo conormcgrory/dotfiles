@@ -1,6 +1,6 @@
-" [.vimrc_writing]
+" [.vimrc_vundle]
 "
-" Vim config file for writing
+" Vim config file that uses Vundle
 "
 " Last Modified: 11 February 2018
 
@@ -20,6 +20,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Solarized colorscheme
 Plugin 'altercation/vim-colors-solarized'
+
+" Scala plugin
+Plugin 'derekwyatt/vim-scala'
 
 " Goyo plugin
 Plugin 'junegunn/goyo.vim'
@@ -42,7 +45,21 @@ set backspace=indent,eol,start
 " Syntax processing
 syntax enable
 
+" Set tabs to 4 spaces
+set tabstop=4
+set softtabstop=4
+set expandtab
+set shiftwidth=4
+
+" Folding
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+set foldmethod=indent
+
 " UI stuff
+set ruler
+set nonumber
 set mouse=a
 set wildmenu
 let g:netrw_banner = 0 
