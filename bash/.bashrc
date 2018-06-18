@@ -2,7 +2,7 @@
 #
 # Conor McGrory
 #
-# Last modified: 11 February 2018
+# Last modified: 18 June 2018
 
 
 # Set Terminal prompt to <current directory> + '$' + ' '
@@ -26,8 +26,5 @@ bind -m vi-insert "\C-l":clear-screen
 # Create writing Vim alias
 alias wvim='vim -u ~/.vimrc_writing -c Goyo -c Pencil'
 
-# OPAM (package manager for OCaml) configuration
-. /Users/cmcgrory/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-# Add Anaconda to PATH
-export PATH="/Users/cmcgrory/.anaconda2/bin:$PATH"
+# Add MATLAB command to path
+export PATH=$PATH:/Applications/MATLAB9.4.app/bin
