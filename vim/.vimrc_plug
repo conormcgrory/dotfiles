@@ -2,7 +2,7 @@
 "
 " Vim config file that uses Plug
 "
-" Last Modified: 14 February 2018
+" Last Modified: 25 July 2018
 
 
 " --- Plug stuff ---
@@ -17,6 +17,9 @@ Plug 'reedes/vim-pencil'
 
 " NERDTree
 Plug 'scrooloose/nerdtree'
+
+" Latex plugin
+Plug 'lervag/vimtex'
 
 call plug#end() 
 
