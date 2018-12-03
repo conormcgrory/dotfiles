@@ -1,0 +1,11 @@
+# [.gitconfig]
+#
+# Conor McGrory
+#
+# Last updated: 2018-08-03
+
+
+# Basic user info
+[user]
+name = Conor McGrory
+email = cpmcgrory@gmail.com
