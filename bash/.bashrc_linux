@@ -1,6 +1,6 @@
 # [.bashrc_linux]
 # 
-# Last updated: 2018-08-03
+# Last updated: 2018-12-05
 
 ## Defaults from LinuxMint
 
@@ -134,3 +134,6 @@ set -o vi
 
 # Make Ctrl-L work to clear screen
 bind -m vi-insert "\C-l":clear-screen
+
+# Load project Bash aliases 
+. ~/savin_lab/mec/bin/bash_aliases
