@@ -1,12 +1,11 @@
 # ~/.muttrc
 
-set imap_user = 'cpmcgrory@gmail.com'
+set imap_user = "cpmcgrory@gmail.com"
 # set imap_pass = "pass"
-set spoolfile = imaps://imap.gmail.com:993/INBOX
-set folder = imaps://imap.gmail.com:993
-set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
+set spoolfile = "imaps://imap.gmail.com:993/INBOX"
+set folder = "imaps://imap.gmail.com:993"
 set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
-set message_cachedir = "~/.mutt/cache/bodies"
+set message_cachedir = ~/.mutt/cache/bodies
 set certificate_file = ~/.mutt/certificates
 
 set ssl_starttls = yes
@@ -18,7 +17,7 @@ set from = "cpmcgrory@gmail.com"
 set realname = "Conor McGrory"
 
 # authenticators
-set smtp_authenticators = 'gssapi:login'
+set smtp_authenticators = "gssapi:login"
 
 set sort=threads
 
@@ -29,7 +28,7 @@ set mailcap_path = ~/.mutt/mailcap
 
 set mail_check = 300
 
-set editor = "vim"
+set editor = "vim -S ~/.mutt/vimrc"
 
 # color settings
 source ~/.mutt/colors

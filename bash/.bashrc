@@ -2,7 +2,7 @@
 #
 # Conor McGrory
 #
-# Last modified: 18 June 2018
+# Last modified: 2018-09-17
 
 
 # Set Terminal prompt to <current directory> + '$' + ' '
@@ -28,3 +28,6 @@ alias wvim='vim -u ~/.vimrc_writing -c Goyo -c Pencil'
 
 # Add MATLAB command to path
 export PATH=$PATH:/Applications/MATLAB9.4.app/bin
+
+# Add project aliases to command line
+. ~/savin_lab/mec/bin/bash_aliases

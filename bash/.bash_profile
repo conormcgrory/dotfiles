@@ -7,3 +7,7 @@
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
+
+eval "$(pyenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"

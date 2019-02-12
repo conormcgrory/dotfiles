@@ -21,6 +21,10 @@ Plug 'scrooloose/nerdtree'
 " Latex plugin
 Plug 'lervag/vimtex'
 
+" VimWiki plugin
+Plug 'vimwiki/vimwiki'
+
+
 call plug#end() 
 
 
@@ -53,3 +57,23 @@ set nonumber
 set mouse=a
 set wildmenu
 let g:netrw_banner = 0 
+
+" VimWiki stuff
+
+let wiki_mec = {}
+let wiki_mec.path = '~/savin_lab/mec/mec.wiki'
+let wiki_mec.syntax = 'markdown'
+let wiki_mec.ext = '.md'
+
+let wiki_bayesopt = {}
+let wiki_bayesopt.path = '~/pillow_lab/bayesopt/bayesopt.wiki'
+let wiki_bayesopt.syntax = 'markdown'
+let wiki_bayesopt.ext = '.md'
+
+let wiki_personal = {}
+let wiki_personal.path = '~/vimwiki_notes/'
+let wiki_personal.syntax = 'markdown'
+let wiki_personal.ext = '.md'
+
+let g:vimwiki_list = [wiki_mec, wiki_bayesopt, wiki_personal]
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
