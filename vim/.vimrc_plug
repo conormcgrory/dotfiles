@@ -9,20 +9,23 @@
 
 call plug#begin('~/.vim/plugged')
 
-" Goyo plugin
+" Goyo
 Plug 'junegunn/goyo.vim'
 
-" VimPencil plugin
+" VimPencil
 Plug 'reedes/vim-pencil'
 
 " NERDTree
 Plug 'scrooloose/nerdtree'
 
-" Latex plugin
+" Latex
 Plug 'lervag/vimtex'
 
-" VimWiki plugin
+" VimWiki
 Plug 'vimwiki/vimwiki'
+
+" Vim ripgrep
+Plug 'jremmen/vim-ripgrep'
 
 
 call plug#end() 
