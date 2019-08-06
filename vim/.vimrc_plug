@@ -63,10 +63,10 @@ let g:netrw_banner = 0
 
 " VimWiki stuff
 
-let wiki_mec = {}
-let wiki_mec.path = '~/savin_lab/mec/mec.wiki'
-let wiki_mec.syntax = 'markdown'
-let wiki_mec.ext = '.md'
+let wiki_worm = {}
+let wiki_worm.path = '~/paninski_lab/worm/wiki'
+let wiki_worm.syntax = 'markdown'
+let wiki_worm.ext = '.md'
 
 let wiki_bayesopt = {}
 let wiki_bayesopt.path = '~/pillow_lab/bayesopt/bayesopt.wiki'
@@ -78,5 +78,5 @@ let wiki_personal.path = '~/vimwiki_notes/'
 let wiki_personal.syntax = 'markdown'
 let wiki_personal.ext = '.md'
 
-let g:vimwiki_list = [wiki_mec, wiki_bayesopt, wiki_personal]
+let g:vimwiki_list = [wiki_worm, wiki_bayesopt, wiki_personal]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
