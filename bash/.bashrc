@@ -2,7 +2,7 @@
 #
 # Conor McGrory
 #
-# Last modified: 2019-08-05
+# Last modified: 2019-08-21
 
 
 # Set Terminal prompt to <current directory> + '$' + ' '
@@ -28,3 +28,18 @@ export PATH=$PATH:/Applications/MATLAB9.4.app/bin
 
 # Set Watson config directory
 export WATSON_DIR=~/.config/watson
+
+# nnn file browser config
+export NNN_USE_EDITOR=1
+
+# Alias for nnn file browser that cds on quit
+export NNN_TMPFILE="/tmp/nnn"
+n()
+{
+    nnn "$@"
+
+    if [ -f $NNN_TMPFILE ]; then
+        . $NNN_TMPFILE
+        rm $NNN_TMPFILE
+    fi
+}

@@ -64,9 +64,13 @@ let g:netrw_banner = 0
 " VimWiki stuff
 
 let wiki_worm = {}
-let wiki_worm.path = '~/paninski_lab/worm/wiki'
+let wiki_worm.path = '~/paninski_lab/worm/worm-tracking.wiki'
 let wiki_worm.syntax = 'markdown'
 let wiki_worm.ext = '.md'
+let wiki_worm.index = 'home'
+let wiki_worm.diary_rel_path = 'daily_log/'
+let wiki_worm.diary_index = 'index'
+let wiki_worm.diary_header = 'Daily Log'
 
 let wiki_bayesopt = {}
 let wiki_bayesopt.path = '~/pillow_lab/bayesopt/bayesopt.wiki'
