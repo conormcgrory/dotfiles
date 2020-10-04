@@ -30,16 +30,16 @@ export PATH=$PATH:/Applications/MATLAB9.4.app/bin
 export WATSON_DIR=~/.config/watson
 
 # nnn file browser config
-export NNN_USE_EDITOR=1
+#export NNN_USE_EDITOR=1
 
 # Alias for nnn file browser that cds on quit
-export NNN_TMPFILE="/tmp/nnn"
-n()
-{
-    nnn "$@"
-
-    if [ -f $NNN_TMPFILE ]; then
-        . $NNN_TMPFILE
-        rm $NNN_TMPFILE
-    fi
-}
+#export NNN_TMPFILE="/tmp/nnn"
+#n()
+#{
+#    nnn "$@"
+#
+#    if [ -f $NNN_TMPFILE ]; then
+#        . $NNN_TMPFILE
+#        rm $NNN_TMPFILE
+#    fi
+#}
