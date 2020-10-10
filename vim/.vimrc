@@ -1,9 +1,6 @@
-" [.vimrc_simple]
-"
-" Vim config file with basic settings (no Vundle).
-"
-" Last Modified: 11 February 2018
-
+" 
+" ~/.vimrc
+" 
 
 " Allow backspace key to be used for deletion
 set backspace=indent,eol,start

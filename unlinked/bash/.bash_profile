@@ -2,22 +2,14 @@
 # 
 # Conor McGrory
 #
-# Last modified: 6 November 2019
+# Last modified: 10 October 2020
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-# Enable Poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-
-# Enable Ruby gems
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-
 # Add Homebrew sbin directory to path
 export PATH="/usr/local/sbin:$PATH"
-
-export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -33,5 +25,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-export PATH="$HOME/.cargo/bin:$PATH"

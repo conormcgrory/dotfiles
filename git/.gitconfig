@@ -1,28 +1,7 @@
-# [.gitconfig]
-#
-# Conor McGrory
-#
-# Last updated: 11 Feb 2018
-
-
-# Basic user info
 [user]
-name = Conor McGrory
-email = cpmcgrory@gmail.com
-
-# Global excludes
+	name = Conor McGrory
+	email = cpmcgrory@gmail.com
+[credential]
+	helper = osxkeychain
 [core]
 	excludesfile = /Users/cmcgrory/.gitignore_global
-
-# SourceTree setup
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-
-# Strip output from Jupyter notebooks when committing
-[filter "nbstripout"]
-	clean = nbstripout
-	smudge = cat
