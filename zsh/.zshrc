@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ddg="BROWSER=w3m ddgr"
 
 
 ## Conda settings
@@ -120,3 +121,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+## Homebrew path modification
+
+export PATH="/usr/local/sbin:$PATH"
