@@ -72,7 +72,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode wd)
+plugins=(vi-mode wd fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,6 +121,22 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-## Homebrew path modification
 
+## pyenv settings
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+## FZF keybindings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+## Add local/bin to PATH (for LunarVim)
+export PATH="/Users/cmcgrory/.local/bin/:$PATH"
+
+
+## Homebrew path modification
 export PATH="/usr/local/sbin:$PATH"
+
+
